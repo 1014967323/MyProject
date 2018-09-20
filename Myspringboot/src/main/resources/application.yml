@@ -1,0 +1,12 @@
+# 配置tomcat端口
+server:
+   port: 8088
+# 设置访问路径
+#   servlet:
+#     context-path: /test
+# 配置jsp路径
+spring:
+   mvc:
+      view:
+         prefix: /WEB-INF/
+         suffix: .jsp

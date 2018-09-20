@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 9999
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-mybaties/**
+      service-id: service-mybaties
+    api-b:
+      path: /api-login/**
+      service-id: service-login
